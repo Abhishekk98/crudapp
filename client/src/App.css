@@ -1,38 +1,85 @@
-.App {
-  text-align: center;
+*{
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+    background-color: gray;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container{
+    padding: 10px;
+    /* background-color: white; */
+    max-width: 700px;
+    margin: 50px auto;
+    
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.btn{
+    border: none;
+    padding: 10px 25px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-add{
+    background-color: blue;
+    color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.addContainer{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.addContainer form{
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(250, 250, 250);
+    padding: 50px 40px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    border-radius: 10px;
+}
+.addContainer form label{
+    font-size: 18px;
+    padding: 5px;
+    font-family:verdana, sans-serif;
+    font-weight: 600;
+}
+
+
+.addContainer form input{
+    font-size: 18px;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.addContainer form button{
+    background-color: rgb(5, 195, 5);
+    color: white;
+    font-weight: 550;
+    margin-top: 10px;
+    padding: 20px ;
+}
+
+.addContainer form .close-btn{
+    margin-left: auto;
+    font-size: 20px;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    
+    border: 1px solid black;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
 }
